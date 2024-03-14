@@ -60,22 +60,26 @@
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="102dp"
+        android:layout_toEndOf="@+id/textView2"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/btnCalcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="81dp"
+        android:layout_height="47dp"
         android:layout_below="@+id/editTextNumberDecimal"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="86dp"
-        android:layout_marginBottom="209dp"
-        android:text="Calcular"
-        />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/backgroud_button"
+        android:text="Calcular" />
 
 
 </RelativeLayout>
