@@ -6,85 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
+    <Toolbar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radioButton"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="288dp"
-        android:text="Feminino" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="112dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="151dp"
-        android:text="Calcula IMC" />
-
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="101dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="143dp"
-        android:layout_marginTop="426dp"
-        android:layout_marginEnd="167dp"
-        android:text="Calcular IMC" />
+        android:title="Calcula IMC"
+        android:titleTextColor="@color/white"
+        android:background="@color/purple_700"
+        />
 
     <RadioButton
         android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="286dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="113dp"
         android:text="Masculino" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="170dp"
+        android:text="Feminino" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
+        android:text="SEXO" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="71dp"
-        android:layout_height="38dp"
-        android:layout_below="@+id/radioButton2"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="9dp"
-        android:text="Altura :" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="47dp"
-        android:layout_height="29dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="657dp"
-        android:text="Sexo" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="261dp"
-        android:layout_marginEnd="135dp"
-        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:text="Altura :" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:ems="10"
-        android:inputType="number|numberDecimal|numberSigned" />
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNumberDecimal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:layout_marginBottom="209dp"
+        android:text="Calcular"
+        />
+
 
 </RelativeLayout>

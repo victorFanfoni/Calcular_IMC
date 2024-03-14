@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
         val btnCalcular = findViewById<Button>(R.id.btnCalcular)
 
         btnCalcular.setOnClickListener {
-            val alturaText = findViewById<TextView>(R.id.editTextNumber).text.toString()
+            val alturaText = findViewById<TextView>(R.id.editTextNumberDecimal).text.toString()
 
             if (alturaText.isNotBlank()) {
                 val altura = alturaText.toDouble()
